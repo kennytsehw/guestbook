@@ -14,10 +14,10 @@ spec:
               serviceName: frontend
               servicePort: 80
 
-status:
-  loadbalancer:
-     ingress:
-     - ip: 127.0.0.1
+providers:
+  kubernetesIngress:
+    ingressEndpoint:
+      ip: "127.0.0.1"
 
 ---
 apiVersion: v1
